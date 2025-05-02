@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
 
-count=$(grep -o '[aeiou]' sample.txt | wc -w)
+count=$(grep -o '[aeiouAEIOU]' sample.txt | wc -l)
 echo "Total vowels: $count"
+
